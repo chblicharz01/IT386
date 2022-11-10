@@ -1,3 +1,7 @@
+/*Chris Blicharz
+ * Server File
+ * 11/10/2022
+ */
 package assign04_Blicharz;
 import java.rmi.Naming;
 

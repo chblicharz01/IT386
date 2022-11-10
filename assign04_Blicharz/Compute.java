@@ -1,4 +1,9 @@
+/*Chris Blicharz
+ * Compute Interface File
+ * 11/10/2022
+ */
 package assign04_Blicharz;
+
 import java.rmi.*;
 
 public interface Compute extends Remote {
