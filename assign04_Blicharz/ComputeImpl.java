@@ -8,27 +8,34 @@ public class ComputeImpl extends UnicastRemoteObject implements Compute{
     
     public double addition(double value1, double value2) throws RemoteException
     {
-        return value1;
+        return value1 + value2;
     }
 
     public double subtraction(double value1, double value2) throws RemoteException
     {
-        return value1;
+        return value1 - value2;
     }
 
     public double multiplication(double value1, double value2) throws RemoteException
     {
-        return value1;
+        return value1 * value2;
     }
 
     public double division(double value1, double value2) throws RemoteException
     {
-        return value1;
+        return value1/value2;
     }
 
     public double greatest_common_divisor(double value1, double value2) throws RemoteException
     {
-        return value1;
+        if(value1 == 0)
+        {
+            return value2;
+        }
+        else
+        {
+            return greatest_common_divisor(value2 % value1, value2);
+        }
     }
 
     public double area_of_circle(double radius) throws RemoteException{
